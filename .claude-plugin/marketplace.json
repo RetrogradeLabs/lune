@@ -1,0 +1,17 @@
+{
+  "name": "retrograde-labs-lune",
+  "owner": {
+    "name": "Retrograde Labs",
+    "url": "https://luneresearch.com"
+  },
+  "plugins": [
+    {
+      "name": "lune",
+      "description": "Lune Research — paper search + citation graph + conference monitoring + research guidance. Wraps the Lune MCP server, four research-workflow skills, and slash commands.",
+      "source": {
+        "type": "github",
+        "repo": "RetrogradeLabs/lune"
+      }
+    }
+  ]
+}

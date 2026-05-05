@@ -1,0 +1,20 @@
+{
+  "name": "lune",
+  "description": "Top-tier paper search, citation graphs, conference monitoring, and curated research best-practices — for your Claude Code agent. Ships an MCP server, four research skills, and three slash commands.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Retrograde Labs",
+    "url": "https://luneresearch.com"
+  },
+  "homepage": "https://luneresearch.com",
+  "repository": "https://github.com/RetrogradeLabs/lune",
+  "license": "MIT",
+  "keywords": [
+    "research",
+    "academic-papers",
+    "literature-review",
+    "citation-graph",
+    "mcp",
+    "lune"
+  ]
+}

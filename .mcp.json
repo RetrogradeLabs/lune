@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "lune": {
+      "type": "http",
+      "url": "https://mcp.luneresearch.com/mcp",
+      "headers": {
+        "Authorization": "Bearer ${LUNE_API_KEY}"
+      }
+    }
+  }
+}
