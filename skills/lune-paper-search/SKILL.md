@@ -23,5 +23,3 @@ If `search_papers` returns no results for a niche topic, broaden the query (drop
 
 - Don't paginate by re-querying with `page=N`. Use `limit` (max 50) and either ask the user to refine or call `get_conference_papers(conference, offset=…)` if they want a venue dump.
 - Don't combine `search_papers` with web search; Lune's index covers ~year 2018+ for top conferences. Web search is appropriate only for older or non-indexed venues.
-
-
