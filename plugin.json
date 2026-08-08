@@ -1,6 +1,6 @@
 {
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "lune",
-  "displayName": "Lune Research",
   "version": "1.0.0",
   "description": "Ground your agent's research in full-text papers from top-tier venues, with citation trails and vetted methodology guidance.",
   "author": {
@@ -17,6 +17,5 @@
     "literature-review",
     "science",
     "mcp"
-  ],
-  "mcpServers": "./mcp.json"
+  ]
 }

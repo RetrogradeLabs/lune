@@ -1,0 +1,37 @@
+{
+  "name": "lune",
+  "version": "1.0.0",
+  "description": "Ground your agent's research in full-text papers from top-tier venues, with citation trails and vetted methodology guidance.",
+  "author": {
+    "name": "Lune Research",
+    "url": "https://luneresearch.com"
+  },
+  "homepage": "https://luneresearch.com",
+  "repository": "https://github.com/RetrogradeLabs/lune",
+  "license": "MIT",
+  "keywords": [
+    "research",
+    "papers",
+    "citations",
+    "literature-review",
+    "science",
+    "mcp"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./mcp.json",
+  "interface": {
+    "displayName": "Lune Research",
+    "shortDescription": "Search full-text papers from top-tier venues and check claims against what they actually say.",
+    "longDescription": "Lune gives your agent a research corpus it can cite: full text from venues like NeurIPS, ICLR, ACL, CVPR, USENIX Security and IEEE S&P, the citation trails between them, and a curated library of methodology guidance. Search across many angles at once, pull full text, trace who cited what, and fact-check a draft sentence by sentence against verbatim quotes.",
+    "developerName": "Lune Research",
+    "category": "Research",
+    "capabilities": [
+      "Search peer-reviewed papers across top-tier venues",
+      "Read full text and trace citation lineage",
+      "Fact-check claims against verbatim quotes",
+      "Look up research methodology guidance"
+    ],
+    "websiteURL": "https://luneresearch.com",
+    "brandColor": "#0B0B0F"
+  }
+}

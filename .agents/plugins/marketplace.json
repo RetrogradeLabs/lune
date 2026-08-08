@@ -1,0 +1,20 @@
+{
+  "name": "retrograde-labs-lune",
+  "interface": {
+    "displayName": "Lune Research"
+  },
+  "plugins": [
+    {
+      "name": "lune",
+      "source": {
+        "source": "local",
+        "path": "./"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Research"
+    }
+  ]
+}

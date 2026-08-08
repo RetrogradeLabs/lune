@@ -1,17 +1,16 @@
 {
   "name": "retrograde-labs-lune",
   "owner": {
-    "name": "Retrograde Labs",
+    "name": "Lune Research",
     "url": "https://luneresearch.com"
   },
+  "description": "Agent-native research tools from Lune Research.",
   "plugins": [
     {
       "name": "lune",
-      "description": "Lune Research — paper search + citation graph + conference monitoring + research guidance. Wraps the Lune MCP server, four research-workflow skills, and slash commands.",
-      "source": {
-        "type": "github",
-        "repo": "RetrogradeLabs/lune"
-      }
+      "source": "./",
+      "description": "Ground your agent's research in full-text papers from top-tier venues, with citation trails and vetted methodology guidance.",
+      "category": "research"
     }
   ]
 }
