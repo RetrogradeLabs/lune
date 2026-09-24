@@ -1,7 +1,7 @@
 {
   "name": "lune",
   "displayName": "Lune Research",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "Ground your agent's research in full-text papers from top-tier venues, with citation trails and vetted methodology guidance.",
   "author": {
     "name": "Lune Research",
