@@ -19,7 +19,7 @@ step below once, or your app will prompt you the first time it uses a Lune tool.
 ```
 /plugin marketplace add RetrogradeLabs/lune
 /plugin install lune@retrograde-labs-lune
-/mcp                      # choose lune, then sign in
+/mcp                      # choose plugin:lune:lune, then sign in
 ```
 
 **Codex**
@@ -72,8 +72,9 @@ remove the `lune` entry from your MCP config first.
 `mcp__plugin_lune_lune__*` instead, which that entry does not cover, so a
 plugin-only install prompts on first use of each tool.
 
-## Development
+## Support
 
-The source of truth for this plugin lives in the Lune monorepo at
-`packages/plugins/lune/`, and this repository is a sync target. Open issues and
-pull requests against the monorepo rather than editing here.
+This repository is published from Lune's build pipeline, so edits made here are
+replaced on the next release. Send bug reports and feature requests to
+[the issue tracker](https://github.com/RetrogradeLabs/lune/issues), and see the
+[documentation](https://luneresearch.com/docs) for everything else.

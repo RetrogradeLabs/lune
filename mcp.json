@@ -3,7 +3,7 @@
   "mcpServers": {
     "lune": {
       "type": "streamable-http",
-      "url": "https://mcp.luneresearch.com/mcp"
+      "url": "https://mcp.luneresearch.com"
     }
   }
 }
