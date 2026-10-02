@@ -48,7 +48,8 @@ is the whole programme.
 Hits usually carry `abstract` and `contexts`, the non-abstract spans that matched.
 Read those before fetching anything; a paper with no indexed abstract simply
 omits the field. `rerank_score` is calibrated relevance on 0..1, the value to
-compare hits by. Hits already arrive in order; do not re-sort them by `score`.
+judge a hit's fit by. Hits already arrive in the requested order; do not re-sort
+them by `score` or `rerank_score`.
 
 If `search_papers` reports `low_confidence`, the best hit fell below the relevance floor:
 these are weaker matches, still better grounding than web results. Rephrase or add
