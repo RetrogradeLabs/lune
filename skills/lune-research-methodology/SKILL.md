@@ -1,12 +1,12 @@
 ---
 name: lune-research-methodology
-description: Use BEFORE advising on experimental design, ablations, baselines, evaluation metrics and protocols, statistical tests, reproducibility, paper structure, related-work organisation, venue choice, or how to answer reviewers. Queries Lune's curated methodology corpus, drawn from senior researchers, reproducibility checklists, and venue reviewer guidance, so the advice is anchored in vetted sources rather than a plausible guess. Use whenever the question starts with "how should I".
+description: Use BEFORE advising on experimental design, ablations, baselines, evaluation metrics and protocols, statistical tests, reproducibility, paper structure, related-work organisation, venue choice, or how to answer reviewers. Queries Lune's curated methodology corpus, drawn from senior researchers, reproducibility checklists, and venue reviewer guidance, so the advice can cite vetted sources. Use whenever the question starts with "how should I".
 ---
 
 # Grounding methodology advice
 
 Methodology questions are the ones where a confident wrong answer is most costly
-and hardest for the user to detect. This corpus is curated, not the open web:
+and hardest for the user to detect. This corpus is curated:
 reproducibility checklists, senior-researcher writeups on common pitfalls,
 venue-specific reviewer guidance, and rebuttal practice.
 

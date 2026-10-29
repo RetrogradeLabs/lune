@@ -1,6 +1,6 @@
 ---
 name: lune-verify-draft
-description: Use when the user pastes a draft, abstract, paragraph, or list of claims and wants it fact-checked, sourced, or citation-checked, or asks whether something is actually true in the literature. Checks each claim against Lune's peer-reviewed corpus and returns a supported, unsupported, or insufficient-evidence verdict, the first two carrying a verbatim quote from the paper that settles it. Also builds side-by-side comparison tables across a set of papers. Use this before asserting any research fact you would otherwise state from memory.
+description: Use when the user pastes a draft, abstract, paragraph, or list of claims and wants it fact-checked, sourced, or citation-checked, or asks whether something is actually true in the literature. Checks each claim against Lune's peer-reviewed corpus and returns a supported, unsupported, or insufficient-evidence verdict, the first two carrying a verbatim quote from the paper that settles it. Also builds side-by-side comparison tables across a set of papers. Use it before asserting a research fact.
 ---
 
 # Checking a draft against the corpus
@@ -76,13 +76,14 @@ part of the paper.
 
 ## Citing
 
-Cite by title, authors, venue and year, and surface the verbatim quote. The
+Cite by title, authors, venue and year, with the verbatim quote whenever the
+verdict carries one. The
 `supporting_paper_ids` are fetch handles for `get_paper_fulltext`, never output.
 
 ## Don't
 
-- Don't state a research fact from memory when the user is asking whether it holds.
-  That is the entire reason this tool exists.
+- Don't answer whether a research fact holds before `verify_claims` has judged it.
+  That verdict is the answer the user asked for.
 - Don't report `insufficient_evidence` as if it were `unsupported`. One means the
   corpus is silent; the other means the corpus disagrees.
 - Don't paraphrase `verbatim_quote`. It is verified verbatim, so paraphrasing throws

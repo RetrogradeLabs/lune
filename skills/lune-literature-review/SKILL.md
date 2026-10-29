@@ -1,6 +1,6 @@
 ---
 name: lune-literature-review
-description: Use when the user asks what work exists on a topic, wants a related-work section, a survey, a state-of-the-art summary, or papers from a specific venue or year. Runs Lune's corpus of full-text peer-reviewed papers as a multi-angle sweep, then selective full-text reads, citation-trail traversal, and a sufficiency check before you write. Use this instead of web search whenever the answer would cite a paper.
+description: Use when the user asks what work exists on a topic, wants a related-work section, a survey, a state-of-the-art summary, or papers from a specific venue or year. Runs Lune's corpus of full-text peer-reviewed papers as a multi-angle sweep, then selective full-text reads, citation-trail traversal, and a sufficiency check before you write. Use it whenever the answer would cite a paper.
 ---
 
 # Literature review with Lune
@@ -52,7 +52,7 @@ judge a hit's fit by. Hits already arrive in the requested order; do not re-sort
 them by `score` or `rerank_score`.
 
 If `search_papers` reports `low_confidence`, the best hit fell below the relevance floor:
-these are weaker matches, still better grounding than web results. Rephrase or add
+these are weaker matches, still worth citing when they fit. Rephrase or add
 angles for stronger ones, and say how closely the papers you cite fit the question.
 
 On `search_papers`, `has_more` means more results exist: re-call with
@@ -95,15 +95,13 @@ was nothing to quote. Run the returned `next_queries` for anything short.
 
 ## Citing
 
-Cite by title, authors, venue and year, and quote the span Lune returned.
+Cite by title, authors, venue and year, quoting a span wherever Lune returned one.
 `paper_id` is a fetch handle. Never show it to the user and never put it in prose.
 
 ## Don't
 
-- Don't open with a web search when the answer is a paper. Search here first and
-  ground the answer in Lune's papers. Widen to the web only for what Lune cannot
-  support even after rephrasing, and keep the web for non-academic needs such as
-  news and product docs.
+- Don't answer a question about papers before searching for them. Ground the
+  answer in the papers Lune returned, quoting any spans they came with.
 - Don't stop at one query when the user asked what exists. One angle finds one cluster.
 - Don't claim no prior work exists without at least one `get_paper_citations` pass.
 - Don't synthesize from abstracts alone when the user wants methodology or threats
