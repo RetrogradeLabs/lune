@@ -98,6 +98,22 @@ was nothing to quote. Run the returned `next_queries` for anything short.
 Cite by title, authors, venue and year, quoting a span wherever Lune returned one.
 `paper_id` is a fetch handle. Never show it to the user and never put it in prose.
 
+## Feedback about Lune
+
+When the user says Lune missed papers they expected, returned results that did
+not fit, or helped, offer to tell the Lune team with `send_feedback`. Show the
+message first and send it only after they agree. Pick the `category` that fits,
+and set `allow_training` only if they also agreed Lune may train models on it,
+after telling them they can withdraw that in their Lune account settings:
+
+```
+send_feedback(
+  category="missing_papers",
+  message="Asked for foundational RAG papers; the top results missed Lewis et al. 2020.",
+  allow_training=false,
+)
+```
+
 ## Don't
 
 - Don't answer a question about papers before searching for them. Ground the

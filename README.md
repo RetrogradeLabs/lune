@@ -43,8 +43,9 @@ everyone installs Lune from Customize in the sidebar.
 
 ## What you get
 
-Twelve tools covering search, full text, citation trails, cross-paper extraction,
-claim verification, and methodology lookup, plus three skills:
+Thirteen tools covering search, full text, citation trails, cross-paper extraction,
+claim verification, methodology lookup, and feedback to the Lune team, plus three
+skills:
 
 | Skill                       | Fires when                                                     |
 | --------------------------- | -------------------------------------------------------------- |
